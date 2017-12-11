@@ -1,0 +1,9 @@
+span:
+  0:
+    type: mutation
+    range: "13, 31, 49"
+    index: "0:12:2"
+  1:
+    type: mutation
+    range: "15, 33"
+    index: "1:13:2"

@@ -1,0 +1,440 @@
+
+.Version 8.2.2 of ABINIT 
+.(MPI version, prepared for a x86_64_linux_gnu5.4 computer) 
+
+.Copyright (C) 1998-2017 ABINIT group . 
+ ABINIT comes with ABSOLUTELY NO WARRANTY.
+ It is free software, and you are welcome to redistribute it
+ under certain conditions (GNU General Public License,
+ see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
+
+ ABINIT is a project of the Universite Catholique de Louvain,
+ Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
+ Please read ~abinit/doc/users/acknowledgments.html for suggested
+ acknowledgments of the ABINIT effort.
+ For more information, see http://www.abinit.org .
+
+.Starting date : Sun 24 Sep 2017.
+- ( at 01h47 )
+  
+- input  file    -> iter_0000.inp
+- output file    -> iter_0000.out
+- root for input  files -> iter_0000i
+- root for output files -> iter_0000o
+
+
+ DATASET    1 : space group P1 (#  1); Bravais aP (primitive triclinic)
+================================================================================
+ Values of the parameters that define the memory need for DATASET  1.
+     intxc =       0    ionmov =       0      iscf =       7    lmnmax =       6
+     lnmax =       6     mgfft =     216  mpssoang =       3    mqgrid =    3001
+     natom =      12  nloc_mem =       1    nspden =       1   nspinor =       1
+    nsppol =       1      nsym =       1    n1xccc =       0    ntypat =       5
+    occopt =       1   xclevel =       2
+-    mband =          26        mffmem =           1         mkmem =          12
+       mpw =       30936          nfft =     2332800          nkpt =          68
+================================================================================
+P This job should need less than                     813.150 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+_ WF disk file :    834.579 Mbytes ; DEN or POT disk file :     17.800 Mbytes.
+================================================================================
+
+
+ DATASET    2 : space group P1 (#  1); Bravais aP (primitive triclinic)
+================================================================================
+ Values of the parameters that define the memory need for DATASET  2.
+     intxc =       0    ionmov =       0      iscf =      -2    lmnmax =       6
+     lnmax =       6     mgfft =     216  mpssoang =       3    mqgrid =    3001
+     natom =      12  nloc_mem =       1    nspden =       1   nspinor =       1
+    nsppol =       1      nsym =       1    n1xccc =       0    ntypat =       5
+    occopt =       1   xclevel =       2
+-    mband =          40        mffmem =           1         mkmem =           7
+       mpw =       30926          nfft =     2332800          nkpt =          41
+================================================================================
+P This job should need less than                     493.665 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+_ WF disk file :    773.907 Mbytes ; DEN or POT disk file :     17.800 Mbytes.
+================================================================================
+
+--------------------------------------------------------------------------------
+------------- Echo of variables that govern the present computation ------------
+--------------------------------------------------------------------------------
+-
+- outvars: echo of selected default values                                      
+-   iomode0 =  0 , fftalg0 =112 , wfoptalg0 =  0
+-
+- outvars: echo of global parameters not present in the input file              
+-  max_nthreads =    4
+-
+ -outvars: echo values of preprocessed input variables --------
+            acell      1.8897261250E+00  1.8897261250E+00  1.8897261250E+00 Bohr
+              amu      2.69815390E+01  3.09737620E+01  6.97230000E+01
+                       7.49215900E+01  1.14820000E+02
+             ecut      5.00000000E+01 Hartree
+-          fftalg         112
+           getden1          0
+           getden2         -1
+             iscf1          7
+             iscf2         -2
+           istwfk1       2    3    0    0    0    0    0    0    6    7
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+           istwfk2       0    0    0    0    0    0    0    0    0    0
+                         0    0    0    0    0    0    0    0    0    0
+                         2    0    0    0    0    0    0    0    0    0
+                         8    0    0    0    0    0    0    0    0    0
+                         0
+                       outvar_i_n : Printing only first  50 k-points.
+              ixc          11
+           jdtset        1    2
+              kpt1     0.00000000E+00  0.00000000E+00  0.00000000E+00
+                       5.00000000E-01  0.00000000E+00  0.00000000E+00
+                       0.00000000E+00  1.25000000E-01  0.00000000E+00
+                       5.00000000E-01  1.25000000E-01  0.00000000E+00
+                       0.00000000E+00  2.50000000E-01  0.00000000E+00
+                       5.00000000E-01  2.50000000E-01  0.00000000E+00
+                       0.00000000E+00  3.75000000E-01  0.00000000E+00
+                       5.00000000E-01  3.75000000E-01  0.00000000E+00
+                       0.00000000E+00  5.00000000E-01  0.00000000E+00
+                       5.00000000E-01  5.00000000E-01  0.00000000E+00
+                       0.00000000E+00  0.00000000E+00  1.25000000E-01
+                       5.00000000E-01  0.00000000E+00  1.25000000E-01
+                       0.00000000E+00  1.25000000E-01  1.25000000E-01
+                       5.00000000E-01  1.25000000E-01  1.25000000E-01
+                       0.00000000E+00  2.50000000E-01  1.25000000E-01
+                       5.00000000E-01  2.50000000E-01  1.25000000E-01
+                       0.00000000E+00  3.75000000E-01  1.25000000E-01
+                       5.00000000E-01  3.75000000E-01  1.25000000E-01
+                       0.00000000E+00  5.00000000E-01  1.25000000E-01
+                       5.00000000E-01  5.00000000E-01  1.25000000E-01
+                       0.00000000E+00 -3.75000000E-01  1.25000000E-01
+                       5.00000000E-01 -3.75000000E-01  1.25000000E-01
+                       0.00000000E+00 -2.50000000E-01  1.25000000E-01
+                       5.00000000E-01 -2.50000000E-01  1.25000000E-01
+                       0.00000000E+00 -1.25000000E-01  1.25000000E-01
+                       5.00000000E-01 -1.25000000E-01  1.25000000E-01
+                       0.00000000E+00  0.00000000E+00  2.50000000E-01
+                       5.00000000E-01  0.00000000E+00  2.50000000E-01
+                       0.00000000E+00  1.25000000E-01  2.50000000E-01
+                       5.00000000E-01  1.25000000E-01  2.50000000E-01
+                       0.00000000E+00  2.50000000E-01  2.50000000E-01
+                       5.00000000E-01  2.50000000E-01  2.50000000E-01
+                       0.00000000E+00  3.75000000E-01  2.50000000E-01
+                       5.00000000E-01  3.75000000E-01  2.50000000E-01
+                       0.00000000E+00  5.00000000E-01  2.50000000E-01
+                       5.00000000E-01  5.00000000E-01  2.50000000E-01
+                       0.00000000E+00 -3.75000000E-01  2.50000000E-01
+                       5.00000000E-01 -3.75000000E-01  2.50000000E-01
+                       0.00000000E+00 -2.50000000E-01  2.50000000E-01
+                       5.00000000E-01 -2.50000000E-01  2.50000000E-01
+                       0.00000000E+00 -1.25000000E-01  2.50000000E-01
+                       5.00000000E-01 -1.25000000E-01  2.50000000E-01
+                       0.00000000E+00  0.00000000E+00  3.75000000E-01
+                       5.00000000E-01  0.00000000E+00  3.75000000E-01
+                       0.00000000E+00  1.25000000E-01  3.75000000E-01
+                       5.00000000E-01  1.25000000E-01  3.75000000E-01
+                       0.00000000E+00  2.50000000E-01  3.75000000E-01
+                       5.00000000E-01  2.50000000E-01  3.75000000E-01
+                       0.00000000E+00  3.75000000E-01  3.75000000E-01
+                       5.00000000E-01  3.75000000E-01  3.75000000E-01
+              kpt2     1.00000000E+00  0.00000000E+00  5.00000000E-01
+                       9.50000000E-01  0.00000000E+00  4.75000000E-01
+                       9.00000000E-01  0.00000000E+00  4.50000000E-01
+                       8.50000000E-01  0.00000000E+00  4.25000000E-01
+                       8.00000000E-01  0.00000000E+00  4.00000000E-01
+                       7.50000000E-01  0.00000000E+00  3.75000000E-01
+                       7.00000000E-01  0.00000000E+00  3.50000000E-01
+                       6.50000000E-01  0.00000000E+00  3.25000000E-01
+                       6.00000000E-01  0.00000000E+00  3.00000000E-01
+                       5.50000000E-01  0.00000000E+00  2.75000000E-01
+                       5.00000000E-01  0.00000000E+00  2.50000000E-01
+                       4.50000000E-01  0.00000000E+00  2.25000000E-01
+                       4.00000000E-01  0.00000000E+00  2.00000000E-01
+                       3.50000000E-01  0.00000000E+00  1.75000000E-01
+                       3.00000000E-01  0.00000000E+00  1.50000000E-01
+                       2.50000000E-01  0.00000000E+00  1.25000000E-01
+                       2.00000000E-01  0.00000000E+00  1.00000000E-01
+                       1.50000000E-01  0.00000000E+00  7.50000000E-02
+                       1.00000000E-01  0.00000000E+00  5.00000000E-02
+                       5.00000000E-02  0.00000000E+00  2.50000000E-02
+                       0.00000000E+00  0.00000000E+00  0.00000000E+00
+                       0.00000000E+00  5.00000000E-02  5.00000000E-02
+                       0.00000000E+00  1.00000000E-01  1.00000000E-01
+                       0.00000000E+00  1.50000000E-01  1.50000000E-01
+                       0.00000000E+00  2.00000000E-01  2.00000000E-01
+                       0.00000000E+00  2.50000000E-01  2.50000000E-01
+                       0.00000000E+00  3.00000000E-01  3.00000000E-01
+                       0.00000000E+00  3.50000000E-01  3.50000000E-01
+                       0.00000000E+00  4.00000000E-01  4.00000000E-01
+                       0.00000000E+00  4.50000000E-01  4.50000000E-01
+                       0.00000000E+00  5.00000000E-01  5.00000000E-01
+                       0.00000000E+00  5.50000000E-01  5.50000000E-01
+                       0.00000000E+00  6.00000000E-01  6.00000000E-01
+                       0.00000000E+00  6.50000000E-01  6.50000000E-01
+                       0.00000000E+00  7.00000000E-01  7.00000000E-01
+                       0.00000000E+00  7.50000000E-01  7.50000000E-01
+                       0.00000000E+00  8.00000000E-01  8.00000000E-01
+                       0.00000000E+00  8.50000000E-01  8.50000000E-01
+                       0.00000000E+00  9.00000000E-01  9.00000000E-01
+                       0.00000000E+00  9.50000000E-01  9.50000000E-01
+                       0.00000000E+00  1.00000000E+00  1.00000000E+00
+                       outvar_i_n : Printing only first  50 k-points.
+           kptopt1          1
+           kptopt2         -2
+         kptrlatt        2    0    0      0    8    0      0    0    8
+          kptrlen1     1.51088448E+01
+          kptrlen2     3.00000000E+01
+P           mkmem1         12
+P           mkmem2          7
+            natom          12
+            nband1         26
+            nband2         40
+           nbdbuf1          0
+           nbdbuf2          2
+           ndtset           2
+            ngfft          50     216     216
+             nkpt1         68
+             nkpt2         41
+            nstep        1000
+             nsym           1
+           ntypat           5
+              occ      2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       2.000000  2.000000  2.000000  2.000000  2.000000  2.000000
+                       0.000000  0.000000
+            rprim      0.0000000000E+00  2.8267500000E+00  2.8267500000E+00
+                       1.6960500000E+01  0.0000000000E+00  2.8267500000E+00
+                       1.6960500000E+01  2.8267500000E+00  0.0000000000E+00
+           shiftk1     0.00000000E+00  0.00000000E+00  0.00000000E+00
+           shiftk2     5.00000000E-01  5.00000000E-01  5.00000000E-01
+          spgroup           1
+           tolwfr      1.00000000E-05
+            typat      1  1  2  2  3  3  3  4  4  4  4  5
+              wtk1       0.00781    0.00781    0.01563    0.01563    0.01563    0.01563
+                         0.01563    0.01563    0.00781    0.00781    0.01563    0.01563
+                         0.01563    0.01563    0.01563    0.01563    0.01563    0.01563
+                         0.01563    0.01563    0.01563    0.01563    0.01563    0.01563
+                         0.01563    0.01563    0.01563    0.01563    0.01563    0.01563
+                         0.01563    0.01563    0.01563    0.01563    0.01563    0.01563
+                         0.01563    0.01563    0.01563    0.01563    0.01563    0.01563
+                         0.01563    0.01563    0.01563    0.01563    0.01563    0.01563
+                         0.01563    0.01563
+              wtk2       1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+                         1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+                         1.00000    1.00000    1.00000    1.00000    1.00000
+                       outvars : Printing only first  50 k-points.
+           xangst     -2.9922419883E-33  2.3556249902E-01  2.3556249902E-01
+                       1.0976751422E-33  3.9260416503E-01  3.9260416503E-01
+                       8.4802499646E+00  9.6188020432E-01  9.6188020432E-01
+                       8.4802499646E+00  1.1189218703E+00  1.1189218703E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                      -1.0824943151E-33  1.5704166601E-01  1.5704166601E-01
+                       5.3541384697E-34  3.1408333202E-01  3.1408333202E-01
+                       8.4802499646E+00  7.2631770530E-01  7.2631770530E-01
+                       8.4802499646E+00  8.0483853831E-01  8.0483853831E-01
+                       8.4802499646E+00  8.8335937131E-01  8.8335937131E-01
+                       8.4802499646E+00  1.0404010373E+00  1.0404010373E+00
+                      -5.4124715757E-34  7.8520833005E-02  7.8520833005E-02
+            xcart     -5.6545178811E-33  4.4514861032E-01  4.4514861032E-01
+                       2.0743054017E-33  7.4191435053E-01  7.4191435053E-01
+                       1.6025349971E+01  1.8176901588E+00  1.8176901588E+00
+                       1.6025349971E+01  2.1144558990E+00  2.1144558990E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                      -2.0456177960E-33  2.9676574021E-01  2.9676574021E-01
+                       1.0117855385E-33  5.9353148042E-01  5.9353148042E-01
+                       1.6025349971E+01  1.3725415485E+00  1.3725415485E+00
+                       1.6025349971E+01  1.5209244186E+00  1.5209244186E+00
+                       1.6025349971E+01  1.6693072887E+00  1.6693072887E+00
+                       1.6025349971E+01  1.9660730289E+00  1.9660730289E+00
+                      -1.0228088980E-33  1.4838287011E-01  1.4838287011E-01
+             xred      8.3333333333E-02 -1.8015521632E-18  1.8015521632E-18
+                       1.3888888889E-01  3.1481304902E-18 -3.1481304902E-18
+                       9.0277777778E-02  2.5000000000E-01  2.5000000000E-01
+                       1.4583333333E-01  2.5000000000E-01  2.5000000000E-01
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       5.5555555556E-02  9.1066103986E-19 -9.1066103986E-19
+                       1.1111111111E-01  6.8217275653E-19 -6.8217275653E-19
+                       6.9444444444E-03  2.5000000000E-01  2.5000000000E-01
+                       3.4722222222E-02  2.5000000000E-01  2.5000000000E-01
+                       6.2500000000E-02  2.5000000000E-01  2.5000000000E-01
+                       1.1805555556E-01  2.5000000000E-01  2.5000000000E-01
+                       2.7777777778E-02  4.5533051993E-19 -4.5533051993E-19
+            znucl       13.00000   15.00000   31.00000   33.00000   49.00000
+
+================================================================================
+
+ chkinp: Checking input parameters for consistency, jdtset=   1.
+
+ chkinp: Checking input parameters for consistency, jdtset=   2.
+
+================================================================================
+== DATASET  1 ==================================================================
+-   nproc =    6
+
+ Exchange-correlation functional for the present dataset will be:
+  GGA: Perdew-Burke-Ernzerhof functional - ixc=11
+ Citation for XC functional:
+  J.P.Perdew, K.Burke, M.Ernzerhof, PRL 77, 3865 (1996)
+
+ Real(R)+Recip(G) space primitive vectors, cartesian coordinates (Bohr,Bohr^-1):
+ R(1)=  0.0000000  5.3417833  5.3417833  G(1)= -0.0156003  0.0936017  0.0936017
+ R(2)= 32.0506999  0.0000000  5.3417833  G(2)=  0.0156003 -0.0936017  0.0936017
+ R(3)= 32.0506999  5.3417833  0.0000000  G(3)=  0.0156003  0.0936017 -0.0936017
+ Unit cell volume ucvol=  1.8291110E+03 bohr^3
+ Angles (23,13,12)=  1.33511843E+01  8.33244078E+01  8.33244078E+01 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft=  50 216 216
+         ecut(hartree)=     50.000   => boxcut(ratio)=   2.07933
+
+--- Pseudopotential description ------------------------------------------------
+- pspini: atom type   1  psp file is psppar.Al
+- pspatm: opening atomic psp file    psppar.Al
+- Goedecker pseudopotential for Al
+- 13.00000   3.00000     70301                znucl, zion, pspdat
+   10   11    1    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+ rloc=   0.4500000
+ cc(1:1)=  -7.5547613
+ for angular momentum l =  0 r(l) =   0.4874353
+   h11, h12, h13 =   6.9599383  -1.8888358   0.0000000
+        h22, h23 =               2.4384766   0.0000000
+             h33 =                           0.0000000
+ for angular momentum l =  1 r(l) =   0.5621895
+   h11, h12, h13 =   1.8652986   0.0000000   0.0000000
+        h22, h23 =               0.0000000   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.0132375  -0.0126507   0.0000000
+        k22, k23 =               0.0149685   0.0000000
+             k33 =                           0.0000000
+-  Local part computed in reciprocal space.
+
+ pspatm : COMMENT -
+  the projectors are not normalized,
+  so that the KB energies are not consistent with 
+  definition in PRB44, 8503 (1991). 
+  However, this does not influence the results obtained hereafter.
+ pspatm: epsatm=   -7.02543141
+         --- l  ekb(1:nproj) -->
+             0    0.719784    3.138644
+             1    0.000000    0.742672
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   2  psp file is psppar.P
+- pspatm: opening atomic psp file    psppar.P
+- Goedecker pseudopotential for P
+- 15.00000   5.00000     70301                znucl, zion, pspdat
+   10   11    1    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+ rloc=   0.4300000
+ cc(1:1)=  -5.8759433
+ for angular momentum l =  0 r(l) =   0.3963774
+   h11, h12, h13 =  11.0088621  -3.4703561   0.0000000
+        h22, h23 =               4.4802104   0.0000000
+             h33 =                           0.0000000
+ for angular momentum l =  1 r(l) =   0.4482984
+   h11, h12, h13 =   3.0560642   0.0000000   0.0000000
+        h22, h23 =               0.0000000   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.0260689  -0.0211846   0.0000000
+        k22, k23 =               0.0250659   0.0000000
+             k33 =                           0.0000000
+-  Local part computed in reciprocal space.
+
+ pspatm : COMMENT -
+  the projectors are not normalized,
+  so that the KB energies are not consistent with 
+  definition in PRB44, 8503 (1991). 
+  However, this does not influence the results obtained hereafter.
+ pspatm: epsatm=   -1.54907625
+         --- l  ekb(1:nproj) -->
+             0    0.657919    2.761537
+             1    0.000000    0.392313
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   3  psp file is psppar.Ga
+- pspatm: opening atomic psp file    psppar.Ga
+- Goedecker pseudopotential for Ga
+- 31.00000   3.00000     70301                znucl, zion, pspdat
+   10   11    2    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+ rloc=   0.5600000
+ cc(1:0)=
+ for angular momentum l =  0 r(l) =   0.5658665
+   h11, h12, h13 =   2.2157505   1.0324479  -0.7606295
+        h22, h23 =              -2.5700484   1.9639368
+             h33 =                          -1.5588265
+ for angular momentum l =  1 r(l) =   0.6467161
+   h11, h12, h13 =   0.3112239   0.6134160   0.0000000
+        h22, h23 =              -0.7258037   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.0437860  -0.0116229   0.0000000
+        k22, k23 =               0.0137523   0.0000000
+             k33 =                           0.0000000
+ for angular momentum l =  2 r(l) =   0.9994248
+   h11, h12, h13 =   0.0895195   0.0000000   0.0000000
+        h22, h23 =               0.0000000   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.0009053   0.0000000   0.0000000
+        k22, k23 =               0.0000000   0.0000000
+             k33 =                           0.0000000
+-  Local part computed in reciprocal space.
+
+ pspatm : COMMENT -
+  the projectors are not normalized,
+  so that the KB energies are not consistent with 
+  definition in PRB44, 8503 (1991). 
+  However, this does not influence the results obtained hereafter.
+ pspatm: epsatm=    5.91122074
+         --- l  ekb(1:nproj) -->
+             0   -2.789571   -0.023657    1.584402
+             1   -0.810470    0.477955
+             2    1.264252
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   4  psp file is psppar.As
+- pspatm: opening atomic psp file    psppar.As
+- Goedecker pseudopotential for As
+- 33.00000   5.00000     70301                znucl, zion, pspdat
+   10   11    2    0      2001   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+ rloc=   0.5200000
+ cc(1:0)=
+ for angular momentum l =  0 r(l) =   0.4555496
+   h11, h12, h13 =   5.5206733   0.0351222  -1.0610824
+        h22, h23 =              -1.7711932   2.7397029
+             h33 =                          -2.1745718
+ for angular momentum l =  1 r(l) =   0.5546056
+   h11, h12, h13 =   1.0217916   0.6292083   0.0000000
+        h22, h23 =              -0.7444892   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.0788450  -0.0330853   0.0000000
+        k22, k23 =               0.0391470   0.0000000
+             k33 =                           0.0000000
+ for angular momentum l =  2 r(l) =   0.7036887
+   h11, h12, h13 =   0.3147950   0.0000000   0.0000000
+        h22, h23 =               0.0000000   0.0000000
+             h33 =                           0.0000000
+   k11, k12, k13 =   0.0033557   0.0000000   0.0000000
+        k22, k23 =               0.0000000   0.0000000
+             k33 =                           0.0000000
+-  Local part computed in reciprocal space.
+
+ pspatm : COMMENT -
+  the projectors are not normalized,
+  so that the KB energies are not consistent with 
+  definition in PRB44, 8503 (1991). 
+  However, this does not influence the results obtained hereafter.
+ pspatm: epsatm=    8.49486654
+         --- l  ekb(1:nproj) -->
+             0   -1.602869    0.226712    1.903954
+             1   -0.351815    0.454974
+             2    0.381379
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   5  psp file is psppar.In
+- pspatm: opening atomic psp file    psppar.In
+- Goedecker pseudopotential for In
+- 49.00000   3.00000     70301                znucl, zion, pspdat
